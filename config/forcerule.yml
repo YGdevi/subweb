@@ -5,7 +5,7 @@ port: 7890
 socks-port: 7891
 
 # Linux 和 macOS 的 redir 代理端口 (如需使用此功能，请取消注释)
-# redir-port: 7892
+redir-port: 7892
 
 # 允许局域网的连接（可用来共享代理）
 allow-lan: true
@@ -29,14 +29,13 @@ external-controller: 127.0.0.1:9090
 
 # DNS 设置
 dns:
-  enable: false
+  enable: true
   listen: 0.0.0.0:53
   ipv6: false
   enhanced-mode: fake-ip
   nameserver:
-   - 119.29.29.29
-   - 114.114.114.114
-   - 223.5.5.5
+   - 'm.pycloud.top'
+   - 'i.pycloud.top'
 
 
 
